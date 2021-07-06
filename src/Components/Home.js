@@ -9,9 +9,9 @@ import 'D:/coffee/node_modules/bootstrap/dist/css/bootstrap.min.css'
   function Home() {
     const [state,setState]=useState();
     const history = useHistory();
-    const thisIsRedirect = ()=> {
+    const thisIsRedirect = (id)=> {
       // <Route path="/order" component={ Order }/>
-      history.push('/order');
+      history.push('/order/'+id);
     }
      
 
@@ -30,7 +30,7 @@ import 'D:/coffee/node_modules/bootstrap/dist/css/bootstrap.min.css'
                          <h5 class="card-title">Black Coffee</h5>
                         <p className="price">Price: $2</p>
                         
-                         <button class="btn btn-success" onClick={thisIsRedirect}>Order Now</button>
+                         <button class="btn btn-success" onClick={()=>thisIsRedirect(1)}>Order Now</button>
                        </div>
 </div>
                   </div>
@@ -44,7 +44,7 @@ import 'D:/coffee/node_modules/bootstrap/dist/css/bootstrap.min.css'
                          <h5 class="card-title">Cold Coffee</h5>
                          <p className="price">Price: $4</p>
                         
-                         <button class="btn btn-success" onClick={thisIsRedirect}>Order Now</button>
+                         <button class="btn btn-success" onClick={()=>thisIsRedirect(2)}>Order Now</button>
                       </div>
 </div>
 </div>
@@ -57,7 +57,7 @@ import 'D:/coffee/node_modules/bootstrap/dist/css/bootstrap.min.css'
                         <div class="card-body text center">
                          <h5 class="card-title">Cappuccino Coffee</h5>
                          <p className="price">Price: $8</p>
-                         <button class="btn btn-success" onClick={thisIsRedirect}>Order Now</button>
+                         <button class="btn btn-success" onClick={()=>thisIsRedirect(3)}>Order Now</button>
                        </div>
 </div>
 </div>            
