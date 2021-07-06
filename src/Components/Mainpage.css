@@ -1,0 +1,75 @@
+*{
+	margin: 0; padding: 0;
+}
+.main_page img{
+    height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+figcaption{
+    position: relative;
+    bottom: 50rem;
+    /* margin: 0 2rem; */
+    color: whitesmoke;
+    font-size: 40px;
+    float: left;
+    font-weight: bold;
+}
+.container{
+	text-align: center;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	transform: (-50%, -50%);
+	top: 30%;
+	left: 20%;
+	margin: 50px;
+	padding: 30px;
+	height: 600px;
+    width: 800px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(500px,2fr));
+	grid-gap: 5px;
+    border-radius: 15px;
+    /*width: 60px;*/
+	/*dth: 5px;*/
+	/*display: table-caption;*/
+	/*text-align: center;*/
+	/*height: 75vh;
+	width: 10%;
+	background: rgba(0,0,0,.6);
+	position: absolute;
+	transform: (-50%, -50%);
+	top: 30%;
+	left: 20%;
+	*/
+}
+.col-sm-2{
+	font-size: 20px;
+	color: white;
+}
+
+.container h2{
+ 	padding: 0;
+	margin: 0;
+	text-align: left;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: pink;
+}
+.form-group label{
+    float: left;
+}
+.reg p{
+	float: left;
+	font-size: 25px;
+}
+.s1{
+	
+	font-size: 40px;
+}
+
+.s2{
+	font-size: 20px;
+    color: yellow;
+    float: left;
+}
